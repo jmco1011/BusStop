@@ -45,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
                 if (txtUsername.getText().toString().isEmpty()|| txtPassword.getText().toString().isEmpty()){
 
                     Toast.makeText(getApplicationContext(), "details empty",Toast.LENGTH_SHORT).show();
+                }else {
+                    Intent myintent = new Intent(MainActivity.this, MainPage.class);
+                    MainActivity.this.startActivity(myintent);
                 }
             }
         });
