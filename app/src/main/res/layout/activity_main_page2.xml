@@ -41,17 +41,18 @@
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="45dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="36dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
         android:background="@mipmap/ic_launcher"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/txtABal" />
 
     <TextView
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="4dp"
         android:text="Add Money"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,14 +60,23 @@
 
     <ImageButton
         android:id="@+id/btnScanner"
-        android:layout_width="107dp"
-        android:layout_height="121dp"
-        android:layout_marginBottom="188dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
         android:background="@mipmap/scanner"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.815"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtABal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="4dp"
+        android:text="QR Scanner"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/btnScanner" />
 
     <TextView
         android:id="@+id/txtLogout"
